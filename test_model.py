@@ -16,7 +16,7 @@ from deepl_data_loader import *
 
 # set parameters
 from training_scripts.evaluate import evaluate_model
-from new_transformer_model import TAFI s
+from new_transformer_model import TAFI 
 from sklearn.model_selection import KFold
 
 
