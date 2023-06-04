@@ -16,7 +16,7 @@ from deepl_data_loader import *
 
 # set parameters
 from training_scripts.evaluate import evaluate_model
-from new_transformer_model import TAFI as CTIN_with_features
+from new_transformer_model import TAFI s
 from sklearn.model_selection import KFold
 
 
@@ -34,7 +34,7 @@ folders = glob.glob("./data/Data RIDI test/**/processed/")
 counter = 0
 for folder in folders:
     feature_size = 25
-    model = CTIN_with_features(feature_size)
+    model = TAFI(feature_size)
 
     load_model(model,"TAFI_on_ronin.pth" )
     model.eval()
