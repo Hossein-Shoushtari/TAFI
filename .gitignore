@@ -1,0 +1,9 @@
+.idea
+__pycache__
+*.hdf5
+*.pyc
+*.png
+*.csv
+models/*
+data/*
+predictions/*
