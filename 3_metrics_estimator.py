@@ -1,6 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from metric import compute_ate_rte2, errors_sqrt, CDF_params, distance_time_below_threshold
+from metric import compute_ate_rte, errors_sqrt, CDF_params, distance_time_below_threshold
 import glob
 import os
 import pandas as pd
@@ -146,7 +146,7 @@ def plot_final(path,all_errors: list, mean_ATE: float, mean_RTE: float, mean_tim
 
 #----------main
 
-path = "data/tafi/ridi"
+path = "predictions/tafi/ridi"
 csv_files = glob.glob(os.path.join(path, '*.csv'))
 # Count the number of CSV files
 num_csv_files = len(csv_files)
