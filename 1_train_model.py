@@ -20,7 +20,6 @@ from deepl_data_loader import *
 from evaluate import evaluate_model
 from utils import extract_batch_features
 from tafi_model_10 import TAFIWithFCOutput as TAFI
-#from CTIN_model import CTIN as CTIN_with_features
 from sklearn.model_selection import KFold
 
 # Define hyperparameters
@@ -111,7 +110,7 @@ x_train, x_test, y_train, y_test = train_test_split(X, y, test_size=0.20)
 
 
 feature_size = 25
-model = TAFI(context_size=feature_size)#CTIN_with_features(context_size=feature_size)#CTIN(context_size=feature_size)
+model = TAFI(context_size=feature_size)
 #load_model(model, f"Transformer_p_on_ridi/model_{Epoch_start}.pth")
 
 cuda=True
